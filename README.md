@@ -1,7 +1,7 @@
 # A2-Final Project 👩‍💻👩‍🔧👨‍💻👨‍🔧
 In this section it can be observed details about two projects performed in the courses of Introduction to Robotics and Introduction to Robotics Tutorial
 ### Members
-- Sofía Aguero
+- Sofía Agüero
 - Maia Jarolin
 - Moisés Melgarejo
 - Cristhian Sotomayor
