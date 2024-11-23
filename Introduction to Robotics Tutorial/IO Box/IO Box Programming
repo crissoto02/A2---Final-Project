@@ -16,7 +16,7 @@ Function Main
 		EndIf
 
 		Do While Sw(0) = On And Sw(7) = Off
-  		If Sw(2) = On Then
+  			If Sw(2) = On Then
 				Off 8
 			EndIf
 			Do While Sw(4) = On
@@ -27,14 +27,14 @@ Function Main
 			Loop
 		Loop
 
-	  If Sw(7) = On Then
-	    Quit Task1
-	    Wait 2
-	    Go Safe
-	    Go start
-	  EndIf
+	  	If Sw(7) = On Then
+			Quit Task1
+	    		Wait 2
+	    		Go Safe
+	    		Go start
+	  	EndIf
 
-	  Wait Sw(6) = On
-	  Wait Sw(7) = Off
+	  	Wait Sw(6) = On
+	  	Wait Sw(7) = Off
 	Loop
 Fend
