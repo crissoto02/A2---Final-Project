@@ -1,1 +1,40 @@
+Function Main
+	Motor On
+	Power High
+	Speed 30
+	Accel 30, 30
+	SpeedS 300
+	AccelS 5000
+	height_token = 6
+	height_block = 6
+	Tool 1
+	Go start
+	Wait Sw(0) = On
+	Do While Sw(0) = On
+		If Sw(0) = On Then
+			Xqt Task1
+		EndIf
 
+		Do While Sw(0) = On And Sw(7) = Off
+  		If Sw(2) = On Then
+				Off 8
+			EndIf
+			Do While Sw(4) = On
+				Wait Sw(4) = On
+				Halt Task1
+				Wait Sw(4) = Off
+				Resume Task1
+			Loop
+		Loop
+
+	  If Sw(7) = On Then
+	    Quit Task1
+	    Wait 2
+	    Go Safe
+	    Go start
+	  EndIf
+
+	  Wait Sw(6) = On
+	  Wait Sw(7) = Off
+	Loop
+Fend
