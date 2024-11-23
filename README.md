@@ -10,7 +10,7 @@ please click on the links to Introduction to Robotics and Introduction to Roboti
 Ultra-Violet Light Desinfectant Robot
 
 ## [INTRODUCTION TO ROBOTICS TUTORIAL](Introduction%20to%20Robotics%20Tutorial/)
-In this project, 3 task were performed in the Epson Lab
+In this project, three tasks were performed in the Epson Lab
 ### Task 1: Pick and Place
 ### Task 2: Stacking
 ### Task 3:
