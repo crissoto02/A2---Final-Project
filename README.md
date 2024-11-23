@@ -11,7 +11,8 @@ Ultra-Violet Light Desinfectant Robot
 
 ## [INTRODUCTION TO ROBOTICS TUTORIAL](Introduction%20to%20Robotics%20Tutorial/)
 In this project, three tasks were performed in the Epson Lab.
-The three tasks use an I/O Box to control the robot and the Task 3 uses tools designed and fabricated in 3D printer
+The three tasks use an I/O Box to control the robot and the Task 3 uses tools designed and fabricated in 3D printer.
+
 For more details about coding, electrical connection and manufacturer pieces used in the task, access to the link in the title "Introcution to Robotics Tutorial"
 ### Task 1: Pick and Place
 In this Task, the robot must efficiently pick 3 tokens and 3 blocks using its vacuum nozzle from a feeder located within the workspace of the arm robot
