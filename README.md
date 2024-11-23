@@ -9,7 +9,7 @@ please click on the links of "Introduction to Robotics" and "Introduction to Rob
 ## [INTRODUCTION TO ROBOTICS](Introduction%20to%20Robotics/)
 Ultra-Violet Light Desinfectant Robot
 
-## [INTRODUCTION TO ROBOTICS TUTORIAL](Introduction%20to%20Robotics%20Tutorial/) ## clik
+## [INTRODUCTION TO ROBOTICS TUTORIAL](Introduction%20to%20Robotics%20Tutorial/)
 In this project, three tasks were performed in the Epson Lab.
 The three tasks use an I/O Box to control the robot and the Task 3 uses tools designed and fabricated in 3D printer.
 
