@@ -2,41 +2,49 @@ Integer height
 Integer i
 Integer counter
 Function Main
-  Motor On
-  Power High
-  Speed 30
-  Accel 30, 30
-  SpeedS 500
-  AccelS 5000
-  Tool 1
-  height = 6
-  counter = 9
-  Go start
-  Wait Sw(0) = On
-  Do While Sw(0) = On
-    If Sw(0) = On Then
-  		Xqt Task2
-  	EndIf
-  
-  	Do While Sw(0) = On And Sw(7) = Off
-    	If Sw(2) = On Then
-  			Off 8
-  		EndIf
+	Motor On
+	Power High
+	Speed 30
+	Accel 30, 30
+	SpeedS 300
+	AccelS 5000
+	height_token = 6
+	height_block = 6
+	Tool 1
+	Go start
+	Wait Sw(0) = On
+	Do While Sw(0) = On
+		If Sw(0) = On Then
+			Xqt Task1
+		EndIf
+
+		Do While Sw(0) = On And Sw(7) = Off
 			Do While Sw(4) = On
 				Wait Sw(4) = On
-				Halt Task2
-				Wait Sw(4) = Off
-				Resume Task2
-			Loop				
-	  Loop
-	  If Sw(7) = On Then
-	    Quit Task2
-	    Wait 2
-	    Go Safe
-	    Go start
-	  EndIf
-	  Wait Sw(6) = On
-	  Wait Sw(7) = Off
+				Halt Task1
+				If Sw(2) = On Then
+					Off 8
+				EndIf
+				If Sw(6) = On Then
+					On 8
+				EndIf
+				If Sw(4) = Off Then
+					Resume Task1
+				EndIf
+			Loop
+		Loop
+
+	  	If Sw(7) = On Then
+			Quit Task1
+			Off 8
+	    		Wait 2
+	    		Go Safe
+	    		Go start
+			
+	  	EndIf
+
+	  	Wait Sw(7) = Off
+		Wait Sw(0) = Off
 	Loop
 Fend
 
