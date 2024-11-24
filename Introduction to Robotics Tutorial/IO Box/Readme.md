@@ -1,1 +1,6 @@
-
+🟢 Start Button
+🔴 Pause Button
+🟠 Reset Button
+🔵 Turn On the nozzle
+⚪ Turn Off the nozzle
+🚫 Buzzer
