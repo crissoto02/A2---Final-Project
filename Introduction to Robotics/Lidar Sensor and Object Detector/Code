@@ -1,0 +1,25 @@
+Robot Visualizer Example: Maps and Lidar
+Copyright 2018 The MathWorks, Inc.
+
+Create a map without trajectory display. The map should be a valid robotics.OccupancyGrid or robotics.BinaryOccupancyGrid object.
+viz = Visualizer2D;
+viz.showTrajectory = false;
+load exampleMap
+viz.mapName = 'map';
+pose = [3; 4; 0];
+viz(pose)
+
+Create a LidarSensor object and attach it to the map. You can either set the hasLidar property to true and add corresponding range sensor parameters, or use the attachLidarSensor function.
+release(viz); % Needed to change hasLidar property after visualizing
+lidar = LidarSensor;
+lidar.scanAngles = linspace(-pi/2,pi/2,7);
+attachLidarSensor(viz,lidar);
+
+Spin the robot in place, simulate the lidar sensor, and view the results.
+NOTE: If you run this section in a plain code script, this section will be animated.
+for idx = 1:10
+    pose = pose + [0; 0; pi/8];
+    ranges = lidar(pose);
+    viz(pose,ranges)
+    pause(0.25)
+end
