@@ -5,8 +5,6 @@ Function Main
 	Accel 30, 30
 	SpeedS 300
 	AccelS 5000
-	height_token = 6
-	height_block = 6
 	Tool 1
 	Go start
 	Wait Sw(0) = On
