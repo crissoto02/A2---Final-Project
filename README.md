@@ -21,5 +21,5 @@ alignment must tranfered to a tray in its corresponding position
 ### Task 2: Stacking
 In this Task, the robot must collect 10 tokens and 10 blocks from the feeder using its vacuum nozzle and must stack them alternately over a platform located 
 in the workspace of the robot
-### Task 3:
+### Task 3: Integration
 
