@@ -15,13 +15,14 @@ Function Main
 	Wait Sw(0) = On
 	Do While Sw(0) = On
 		If Sw(0) = On Then
-			Xqt Task1
+			Xqt Task2
 		EndIf
 
 		Do While Sw(0) = On And Sw(7) = Off
 			Do While Sw(4) = On
 				Wait Sw(4) = On
-				Halt Task1
+				On 13
+				Halt Task2
 				If Sw(2) = On Then
 					Off 8
 				EndIf
@@ -29,13 +30,14 @@ Function Main
 					On 8
 				EndIf
 				If Sw(4) = Off Then
-					Resume Task1
+					Resume Task2
+					Off 13
 				EndIf
 			Loop
 		Loop
 
 	  	If Sw(7) = On Then
-			Quit Task1
+			Quit Task2
 			Off 8
 	    		Wait 2
 	    		Go Safe
@@ -61,8 +63,8 @@ Function Task2
   Go start
 Fend
 
-' Definicion de las funciones para Epson RC+
-' Funcion para agarrar un bloque
+' Definition of functions for Epson RC+
+' Function to grab a block
 Function Pick_Block
   Move position_block +Z(80)
   Move position_block +Z(counter * height)
@@ -76,7 +78,7 @@ Function Pick_Block
   Move place_position +Z(i * height + 20)
 Fend
 
-' Funcion para agarrar un circulo
+' Function to grab a token
 Function Pick_Token
   Move position_token +Z(80)
   Move position_token +Z(counter * height)
