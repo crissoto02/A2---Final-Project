@@ -16,6 +16,7 @@ Function Main
 		Do While Sw(0) = On And Sw(7) = Off
 			Do While Sw(4) = On
 				Wait Sw(4) = On
+				On 13
 				Halt Task1
 				If Sw(2) = On Then
 					Off 8
@@ -25,6 +26,7 @@ Function Main
 				EndIf
 				If Sw(4) = Off Then
 					Resume Task1
+					Off 13
 				EndIf
 			Loop
 		Loop
