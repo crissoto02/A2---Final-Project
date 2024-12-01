@@ -7,7 +7,9 @@ please click on the links of "Introduction to Robotics" and "Introduction to Rob
 - Moisés Melgarejo - Mechanical Task
 - Cristhian Sotomayor - Project Management
 ## [INTRODUCTION TO ROBOTICS](Introduction%20to%20Robotics/)
-Ultra-Violet Light Desinfectant Robot
+In this project, a simulation of a hybrid robot will be developed. The robot is designed with an articulated arm equipped with ultraviolet (UV) lights along its length, specifically intended 
+to disinfect equipment within a clinical room. Additionally, the robot features omnidirectional wheels, enabling it to navigate along a predefined path to efficiently and effectively 
+complete the disinfection process.
 
 ## [INTRODUCTION TO ROBOTICS TUTORIAL](Introduction%20to%20Robotics%20Tutorial/)
 In this project, three tasks were performed in the Epson Lab.
