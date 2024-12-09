@@ -24,4 +24,5 @@ alignment must tranfered to a tray in its corresponding position
 In this Task, the robot must collect 10 tokens and 10 blocks from the feeder using its vacuum nozzle and must stack them alternately over a platform located 
 in the workspace of the robot
 ### Task 3: Integration
+In this task, the robot must detect how many tokens and blocks are available to carry to the Tray and then must return it to the feeder when the program is finished
 
