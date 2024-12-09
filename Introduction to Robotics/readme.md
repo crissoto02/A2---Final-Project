@@ -12,7 +12,7 @@ Reach: 1400mm
 
 Structure: Articulated
 
-Degrees of Freedom: 3
+Number of Axes: 3 Degrees of Freedom
 - Axis 1: -175° ~ 175°
 - Axis 2: -90° ~ 90°
 - Axis 3: -90° ~ 90°
