@@ -1,5 +1,5 @@
-# Robot Details 🛠️
-## Components
+# Robot Details 🛠️💻
+## Components 
 - Base
 - 3-links Robotic Arm
 - Sensors
