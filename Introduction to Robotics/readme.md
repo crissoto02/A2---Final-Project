@@ -4,6 +4,8 @@ The project features a robotic arm designed for clinical disinfection, equipped 
 - Base
 - 3-links Robotic Arm
 - Sensors
+- UV desinfection lights
+- Omnidirectional wheels
 ## Specifications
 ### Material
 ### Weight (Payload)
