@@ -148,7 +148,7 @@ Function task3
 	Off 13
 Fend
 ```
-```
+```markdown
 # Function Reverse (Return the blocks and tokens to the feeder)
 Function Reverse
 	findtoken = -1
