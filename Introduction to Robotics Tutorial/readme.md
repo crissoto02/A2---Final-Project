@@ -27,10 +27,22 @@
 This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process
 ## Robot Programming 🤖💻
 ```markdown
-# Mi Proyecto
-
-## Ejemplo de Código
+# Function Task 1 (Pick and Place)
+Function Task1
+	For t_position = 0 To 2
+		picktoken()
+		FixToken()
+		placetoken()
+	Next t_position
+	For b_position = 0 To 2
+		pickblock()
+		FixBlock()
+		placeblock()
+	Next b_position
+	Go start
+Fend
 ```
+[Complete Code](Task%201%20-%20Pick&Place.md)
 # Task 2 - Stacking
 ## Purpose
 ### Pick Tokens and Blocks from the feeder
