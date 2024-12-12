@@ -63,7 +63,22 @@ Fend
 [![Programming](https://img.shields.io/badge/Buttons%20Programming-green?style=for-the-badge)](IO%20Box/Task%201%20&%202/IO%20Box%20Programming.md)
 
 This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process
-
+## Robot Programming 🤖💻
+```markdown
+# Function Task 2 (Stacking)
+Function Task2
+  For i = 0 To 19
+  	If (i Mod 2) = 0 Then
+  		Pick_Block()
+  	Else
+  		Pick_Token()
+  		counter = counter - 1
+  	EndIf
+  Next i
+  Go start
+Fend
+```
+[Complete Code](Task%202%20-%20Stacking.md)
 # Task 3 - Integration
 ## Purpose
 ### Pick Tokens and Blocks from the feeder
@@ -99,4 +114,38 @@ This task use an I/O Box consisting of three latching buttons, two non-latching 
 [![Programming](https://img.shields.io/badge/Buttons%20Programming-green?style=for-the-badge)](IO%20Box/Task%203/IO%20Box%20Programming.md)
 
 This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process
-
+## Robot Programming 🤖💻
+```markdown
+# Function Task 3 (Integration)
+Function task3
+	CheckToken()
+	CheckBlock()
+	If worktoken = 1 And workblock = 1 Then
+		On 13
+		GoTo End
+	EndIf
+	If worktoken = 0 Then
+		For tokenpos = findtoken To 2
+ 			PickToken()
+ 			FixToken()
+ 			PlaceToken()
+	 	Next
+	ElseIf worktoken = 1 Then
+		GoTo Block
+	EndIf
+ 	Block:
+ 	If workblock = 0 Then
+ 		For blockpos = findblock To 2
+ 			PickBlock()
+ 			FixBlock()
+ 			PlaceBlock()
+	 	Next
+	ElseIf workblock = 1 Then
+	 	GoTo End
+ 	EndIf
+ 	End:
+	Go start
+	Off 13
+Fend
+```
+[Complete Code](Task%203%20-%20Integration.md)
