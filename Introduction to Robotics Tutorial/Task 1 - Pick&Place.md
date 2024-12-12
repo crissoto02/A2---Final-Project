@@ -1,4 +1,4 @@
-```'Enter the variables
+```epson rc
 Integer t_position
 Integer b_position
 Integer height_token
