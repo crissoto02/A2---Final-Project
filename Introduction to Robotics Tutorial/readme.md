@@ -69,7 +69,9 @@ This task use an I/O Box consisting of three latching buttons, two non-latching 
 ## Components 🕹️🔧
 - 1 Feeder
 - 1 Fixture
-- 1 Tray
+- 1 Tray [![3D CAD](https://img.shields.io/badge/3D%20CAD-blue?style=for-the-badge)](3D%20CAD%20ASSETS/Holder%20Block%20-%20Task%203/Holder%20for%20Block%20Model.stl)
+- Pressure Sensor
+- Cylinder Holder [![3D CAD](https://img.shields.io/badge/3D%20CAD-blue?style=for-the-badge)](3D%20CAD%20ASSETS/Tray%20-%20Task%203/Tray%20Model.stl)
 - 3 Tokens
 - 3 Blocks
 - I/O Box
