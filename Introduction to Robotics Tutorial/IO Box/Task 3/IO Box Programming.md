@@ -1,3 +1,4 @@
+```Epson RC+7.0
 Function Main
 	Motor On
 	Power High
