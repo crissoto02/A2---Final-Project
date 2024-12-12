@@ -1,5 +1,5 @@
 # Task 1 - Pick & Place
-## Purpose
+## Purpose ⚙️🛠️
 ### Pick Tokens and Blocks from the feeder
 1. Position the Robot: Move the robot to the feeder location with the help of pre-defined points
 2. Grab the object: When the robot arm is above the token/block, activates the nozzle to grab the token/block to move to the next position
@@ -44,7 +44,7 @@ Fend
 ```
 [Complete Code](Task%201%20-%20Pick&Place.md)
 # Task 2 - Stacking
-## Purpose
+## Purpose ⚙️🛠️
 ### Pick Tokens and Blocks from the feeder
 1. Position the Robot: Move the robot to the feeder location with the help of pre-defined points
 2. Grab the object: When the robot arm is above the token/block, activates the nozzle to grab the token/block to move to the next position
@@ -80,7 +80,7 @@ Fend
 ```
 [Complete Code](Task%202%20-%20Stacking.md)
 # Task 3 - Integration
-## Purpose
+## Purpose ⚙️🛠️
 ### Pick Tokens and Blocks from the feeder
 1. Position the Robot: Move the robot to the feeder location with the help of pre-defined points
 2. Use Sensor: Activate a pressure sensor to know how many blocks and tokens are in the feeder
