@@ -24,4 +24,10 @@ This task use an I/O Box consisting of three latching buttons, two non-latching 
 This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process
 
 # Task 3 - Integration
+## Electrical System 💡🔋
+[![Wiring Diagram](https://img.shields.io/badge/Wiring%20Diagram-blue?style=for-the-badge)](IO%20Box/Task%203/Wiring%20Diagram.md)
+[![Button Features](https://img.shields.io/badge/Button%20Features-red?style=for-the-badge)](IO%20Box/Task%203/Readme.md)
+[![Programming](https://img.shields.io/badge/Buttons%20Programming-green?style=for-the-badge)](IO%20Box/Task%203/IO%20Box%20Programming)
+
+This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process
 
