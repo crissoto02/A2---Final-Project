@@ -28,7 +28,12 @@ This task use an I/O Box consisting of three latching buttons, two non-latching 
 ## Robot Programming 🤖💻
 # Task 2 - Stacking
 ## Purpose
-
+### Pick Tokens and Blocks from the feeder
+1. Position the Robot: Move the robot to the feeder location with the help of pre-defined points
+2. Grab the object: When the robot arm is above the token/block, activates the nozzle to grab the token/block to move to the next position
+### Stack the blocks and tokens on top of each other
+1. Position the Robot: Move the robot to the base location with the help of a pre-defined point
+2. Stack the blocks and tokens: Alternate between blocks and tokens to stack on top of each other
 ## Components 🕹️🔧
 - 1 Feeder
 - 1 Base
