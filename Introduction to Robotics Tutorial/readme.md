@@ -148,4 +148,20 @@ Function task3
 	Off 13
 Fend
 ```
+```
+# Function Reverse (Return the blocks and tokens to the feeder)
+Function Reverse
+	findtoken = -1
+	findblock = -1
+	tokenpos = 0
+	blockpos = 0
+	For tokenpos = 0 To 2
+		RevToken()
+	Next
+	For blockpos = 0 To 2
+		RevBlock()
+	Next
+	Go start
+Fend
+```
 [Complete Code](Task%203%20-%20Integration.md)
