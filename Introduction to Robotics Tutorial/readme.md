@@ -1,5 +1,5 @@
 # Task 1 - Pick & Place
-[![Pick place](https://github.com/user-attachments/assets/3cf3a7f9-284f-4280-a890-9618ee6581f0)](https://www.youtube.com/watch?v=5dpe79_5fy0)
+[![Pick place](https://github.com/user-attachments/assets/9eb57180-01a2-48d8-8577-bc0b4de51f2a)](https://www.youtube.com/watch?v=5dpe79_5fy0)
 ## Purpose ⚙️🛠️
 ### Pick Tokens and Blocks from the feeder
 1. Position the Robot: Move the robot to the feeder location with the help of pre-defined points
