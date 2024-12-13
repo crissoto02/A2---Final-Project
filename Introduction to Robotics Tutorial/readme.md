@@ -118,7 +118,7 @@ Fend
 [![Programming](https://img.shields.io/badge/Buttons%20Programming-green?style=for-the-badge)](IO%20Box/Task%203/IO%20Box%20Programming.md)
 [![HMI & GUI](https://img.shields.io/badge/HMI%20&%20GUI-yellow?style=for-the-badge)](HMI%20(task%203).md)
 
-This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process. Also contains and HMI and a GUI to control buttons virtually
+This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process. Also contains and HMI and a GUI interface to control the buttons virtually
 ## Robot Programming 🤖💻
 ```markdown
 # Function Task 3 (Integration)
