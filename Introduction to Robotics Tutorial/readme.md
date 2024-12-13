@@ -43,6 +43,8 @@ Function Task1
 Fend
 ```
 [Complete Code](Task%201%20-%20Pick&Place.md)
+[![Pick place](https://github.com/user-attachments/assets/3cf3a7f9-284f-4280-a890-9618ee6581f0)](
+
 # Task 2 - Stacking
 ## Purpose ⚙️🛠️
 ### Pick Tokens and Blocks from the feeder
