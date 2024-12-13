@@ -46,6 +46,7 @@ Fend
 [Complete Code](Task%201%20-%20Pick&Place.md)
 
 # Task 2 - Stacking
+[![stacking](https://github.com/user-attachments/assets/c8882de6-105d-4501-bef5-2a4f00fb6390)[(https://www.youtube.com/watch?v=eQkZRfKHFlY)
 ## Purpose ⚙️🛠️
 ### Pick Tokens and Blocks from the feeder
 1. Position the Robot: Move the robot to the feeder location with the help of pre-defined points
