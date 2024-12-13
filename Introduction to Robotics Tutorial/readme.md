@@ -83,6 +83,7 @@ Fend
 ```
 [Complete Code](Task%202%20-%20Stacking.md)
 # Task 3 - Integration
+[![Integration](https://github.com/user-attachments/assets/4adac686-5717-468a-afd5-ee4216fa4fa5)](https://www.youtube.com/watch?v=irjXbaM0WYo)
 ## Purpose ⚙️🛠️
 ### Pick Tokens and Blocks from the feeder
 1. Position the Robot: Move the robot to the feeder location with the help of pre-defined points
