@@ -1,3 +1,12 @@
+# Worspace for Robot Arm
+This program is a MATLAB script that models a 3-DOF robotic manipulator using the Robotics Toolbox. It performs kinematics calculations and visualizes the workspace of the robot.
+### **Define the Robotic Manipulator**
+The robot is defined using **Denavit-Hartenberg (DH)** parameters:
+- **Link Lengths**:
+  - `L_1 = 40` cm (Link 1).
+  - `L_2 = 30` cm (Link 2).
+  - `L_3 = 20` cm (Link 3).
+```matlab
 %% Workspace
 clear all
 close all
@@ -55,8 +64,9 @@ figure(2)
 plot((p2.^2 + p1.^2).^0.5, p3, 'b.');
 xlabel('x')
 ylabel('y')
-
 figure(3)
 plot((p1.^2 + p3.^2).^0.5, p2, 'b.');
 xlabel('x')
 ylabel('y')
+```
+
