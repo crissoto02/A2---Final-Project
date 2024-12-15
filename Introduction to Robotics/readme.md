@@ -23,6 +23,14 @@ Number of Axes: 3 Degrees of Freedom
 - Axis 2: 0° ~ 90°
 - Axis 3: 0° ~ 90°
 ## Mathematical Model
+- Rotation Matrices (3D linear transformations),
+- Homogeneous Transformation Matrices (combining rotations and translations),
+- Forward Kinematics (position and orientation computation for robotic systems),
+- Matrix Multiplication (composition of transformations),
+- Symbolic Computation (generalized expressions for joint angles).
+
+For more details move to ([Mathematical Model](Mathematical%20Model)).
+
 ## Simulation Results
 ## Analysis
 ## Conclusion
