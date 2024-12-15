@@ -76,4 +76,44 @@ end
 plot(Robot, Q);
 hold on 
 plot3(xx, yy, zz, 'Color', [0 1 0], 'LineWidth', 2);
+
+% Maximum Reach (straight configuration)
+max_reach = L_1 + L_2 + L_3;
+disp(['Maximum Reach of the Robot: ', num2str(max_reach), ' units']);
+
+% Define joint angle ranges (full range for demonstration)
+theta1_range = linspace(-pi, pi, 50); % Base rotation (joint 1)
+theta2_range = linspace(-pi/2, pi/2, 50); % Second link (joint 2)
+theta3_range = linspace(-pi/2, pi/2, 50); % Third link (joint 3)
+
+% Generate all combinations of joint angles
+[Theta1, Theta2, Theta3] = ndgrid(theta1_range, theta2_range, theta3_range);
+
+% Initialize arrays for workspace points
+X_workspace = [];
+Y_workspace = [];
+Z_workspace = [];
+
+% Compute forward kinematics for all joint combinations
+for i = 1:numel(Theta1)
+    % Joint angles
+    q = [Theta1(i), Theta2(i), Theta3(i)];
+    
+    % Forward kinematics
+    T = Robot.fkine(q);
+    pos = transl(T); % Extract position [X, Y, Z]
+    
+    % Store positions
+    X_workspace = [X_workspace; pos(1)];
+    Y_workspace = [Y_workspace; pos(2)];
+    Z_workspace = [Z_workspace; pos(3)];
+end
+
+% Plot the workspace
+figure;
+scatter3(X_workspace, Y_workspace, Z_workspace, 1, 'b.'); % Use small dots for dense plotting
+xlabel('X-axis'); ylabel('Y-axis'); zlabel('Z-axis');
+title('Robot Workspace');
+grid on;
+axis equal;
 ```
