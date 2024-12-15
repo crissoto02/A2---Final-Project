@@ -19,6 +19,12 @@ Number of Axes: 3 Degrees of Freedom
 - Axis 1: -175° ~ 175°
 - Axis 2: 0° ~ 90°
 - Axis 3: 0° ~ 90°
+  
+### Payload
+Tha robot suppor a maximum extra weight of approximately 6 kg
+
+![Payload](https://github.com/user-attachments/assets/8e4f201a-4c2c-4e3c-8453-f5728a3d753b)
+
 ## Mathematical Model
 - Rotation Matrices (3D linear transformations),
 - Homogeneous Transformation Matrices (combining rotations and translations),
