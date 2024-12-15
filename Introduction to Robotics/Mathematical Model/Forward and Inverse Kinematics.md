@@ -287,14 +287,14 @@ Robot.plot(J*pi/180);
 ## Features
 
 1. **Forward Kinematics**  
-   - **Input**: Joint angles (`Theta_1`, `Theta_2`, `Theta_3`) in degrees.  
+   - **Input**: Joint angles (Theta_1, Theta_2, Theta_3) in degrees.  
    - **Computation**: Calculates the end-effector position using the **forward kinematics** function `fkine` based on Denavit-Hartenberg (DH) parameters.  
-   - **Output**: Displays the Cartesian coordinates (`Pos_X`, `Pos_Y`, `Pos_Z`) of the end-effector.  
+   - **Output**: Displays the Cartesian coordinates (Pos_X, Pos_Y, Pos_Z) of the end-effector.  
    - **Visualization**: Plots the robot's configuration in 3D space.
 
 2. **Inverse Kinematics**  
-   - **Input**: Desired Cartesian position (`Pos_X`, `Pos_Y`, `Pos_Z`) of the end-effector.  
-   - **Computation**: Solves for joint angles (`Theta_1`, `Theta_2`, `Theta_3`) using the **inverse kinematics** function `ikine` with translation constraints.  
+   - **Input**: Desired Cartesian position (Pos_X, Pos_Y, Pos_Z) of the end-effector.  
+   - **Computation**: Solves for joint angles (Theta_1, Theta_2, Theta_3) using the **inverse kinematics** function `ikine` with translation constraints.  
    - **Output**: Displays the corresponding joint angles.  
    - **Visualization**: Plots the robot's configuration based on the calculated joint angles.
 
