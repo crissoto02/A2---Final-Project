@@ -1,4 +1,4 @@
-# Kinematics MATLAB GUI for a 3-DOF Robotic Manipulator
+# Kinematics MATLAB GUI for a 3-DOF Robotic Manipulator (Version 10
 
 This file implements a **Graphical User Interface (GUI)** using **GUIDE** to analyze and visualize the kinematics of a **3-DOF robotic manipulator**. It supports both **forward kinematics** and **inverse kinematics** computations, enabling users to input joint angles or desired end-effector positions and visualize the results in real time.
 
