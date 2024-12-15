@@ -19,6 +19,7 @@ Number of Axes: 3 Degrees of Freedom
 - Axis 1: -175° ~ 175°
 - Axis 2: 0° ~ 90°
 - Axis 3: 0° ~ 90°
+## Mathematical Model
 ## Simulation Results
 ## Analysis
 ## Conclusion
