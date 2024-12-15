@@ -1,4 +1,4 @@
-# Jacobian Matrix Calculation for a 3-DOF Robot Manipulator
+# Jacobian Matrix Calculation for a 3-DOF Robot Manipulator (Version 1)
 
 This MATLAB script calculates the **Jacobian matrix** of a 3-DOF robotic manipulator using the **Robotics Toolbox**. The Jacobian provides insights into the relationship between joint velocities and end-effector velocities, which is essential for motion analysis and control.
 ```matlab
