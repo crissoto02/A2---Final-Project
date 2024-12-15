@@ -7,11 +7,11 @@ This MATLAB program provides a **Graphical User Interface (GUI)** to simulate an
 ## Key Features
 
 1. **Forward Kinematics**:
-   - Calculates the position of the robot's end-effector (`X`, `Y`, `Z`) based on user-provided joint angles (`Theta_1`, `Theta_2`, `Theta_3`).
+   - Calculates the position of the robot's end-effector (X, Y, Z) based on user-provided joint angles (Theta_1, Theta_2, Theta_3).
    - Visualizes the robot's configuration in 3D space.
 
 2. **Inverse Kinematics**:
-   - Computes the required joint angles (`Theta_1`, `Theta_2`, `Theta_3`) to reach a user-specified end-effector position (`X`, `Y`, `Z`).
+   - Computes the required joint angles (Theta_1, Theta_2, Theta_3) to reach a user-specified end-effector position (X, Y, Z).
    - Displays the calculated configuration of the robot.
 
 3. **Trajectory Generation**:
