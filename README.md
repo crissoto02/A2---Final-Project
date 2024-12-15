@@ -25,28 +25,31 @@ The three tasks use an I/O Box to control the robot and the Task 3 uses tools de
 
 For more details about coding, electrical connection and manufactured pieces used in the task, access to the link in the title "Introcution to Robotics Tutorial"
 ### Task 1: Pick and Place
-In this task, the robot arm must efficiently pick 3 tokens and 3 blocks from a feeder within its workspace using its vacuum nozzle. After picking each token or block, the robot must:
-1. Move to an alignment plate: The alignment plate ensures precise positioning and enhances performance.
-2. Transfer to a tray: Once aligned, the robot must place the token or block in its corresponding position within a tray.
-   
-The task emphasizes efficiency, accuracy, and the ability to handle different object types (tokens and blocks).
+The goal of this task is to pick **3 tokens** and **3 blocks** from a feeder using the robot's vacuum nozzle and transfer them to a tray. The process involves:
+
+1. **Picking**: The robot collects the tokens and blocks from a feeder located within its workspace.
+2. **Alignment**: After picking each token or block, the robot moves to an **alignment plate** to ensure proper positioning for the next step.
+3. **Placement**: Once aligned, the robot transfers the token or block to its corresponding position in a tray.
+
+This task focuses on **efficiency**, **precision**, and handling **multiple object types**.
 ### Task 2: Stacking
-In this task, the robot must:
+In this task, the robot must stack **10 tokens** and **10 blocks** alternately on a platform within its workspace. The process involves:
 
-1. Collect 10 tokens and 10 blocks from the feeder using the vacuum nozzle.
-2. Stack the tokens and blocks alternately (e.g., token-block-token-block) over a designated platform located in its workspace.
+1. **Collecting**: The robot picks tokens and blocks from the feeder using its vacuum nozzle.
+2. **Stacking**: The robot alternates between tokens and blocks (e.g., token-block-token-block) to build a stable stack on the designated platform.
 
-This task focuses on the robot's ability to stack objects in an organized and stable manner.
+This task tests the robot's **stacking ability**, ensuring both **stability** and **organization**.
 ### Task 3: Integration
-This task combines object detection, handling, calibration, and reverse operation. The robot must:
+This task combines **object detection**, **calibration**, and a **reverse operation** to demonstrate the robot's integration of multiple functionalities. The steps are:
 
-1. Detect the available objects: Determine the number of tokens and blocks in the feeder.
-2. Pick and calibrate: Pick tokens and blocks using the vacuum nozzle. Tokens must be calibrated using the robot arm, while blocks are calibrated using a cylinder.
-3. Position in the tray: Once calibrated, the robot must place the tokens and blocks in their designated tray positions.
-4. Activate reverse function:
-  - Detect which tray positions are occupied.
-  - Pick the objects from the tray.
-  - Return the tokens and blocks to the feeder.
-  
+1. **Object Detection**: The robot detects the number of tokens and blocks available in the feeder.
+2. **Calibration**:
+   - Tokens are calibrated using the robot arm.
+   - Blocks are calibrated using a cylinder.
+3. **Placement**: After calibration, the robot transfers the tokens and blocks to their designated positions in a tray.
+4. **Reverse Function**:
+   - The robot detects which tray positions are occupied.
+   - It picks the objects from the tray and returns them to the feeder.
+     
 This task tests the robot’s integration of multiple functionalities, including object detection, calibration, precise placement, and reverse operation.
 
