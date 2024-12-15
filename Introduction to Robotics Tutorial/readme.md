@@ -25,7 +25,11 @@
 [![Button Features](https://img.shields.io/badge/Button%20Features-red?style=for-the-badge)](IO%20Box/Task%201%20&%202/Readme.md)
 [![Programming](https://img.shields.io/badge/Buttons%20Programming-green?style=for-the-badge)](IO%20Box/Task%201%20&%202/IO%20Box%20Programming.md)
 
-This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process
+This task utilizes an **I/O Box** consisting of three latching buttons, two non-latching buttons, and a buzzer to control and execute various operations seamlessly during the process. 
+
+- The **latching buttons** allow for persistent commands such as starting, pausing, or resetting tasks.  
+- The **non-latching buttons** provide real-time control of the vacuum nozzle for precise handling.  
+- The **buzzer** acts as a safety feature, alerting operators to any errors or issues, ensuring smooth and secure task execution.  
 ## Robot Programming 🤖💻
 ```markdown
 # Function Task 1 (Pick and Place)
@@ -65,7 +69,11 @@ Fend
 [![Button Features](https://img.shields.io/badge/Button%20Features-red?style=for-the-badge)](IO%20Box/Task%201%20&%202/Readme.md)
 [![Programming](https://img.shields.io/badge/Buttons%20Programming-green?style=for-the-badge)](IO%20Box/Task%201%20&%202/IO%20Box%20Programming.md)
 
-This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process
+This task utilizes an **I/O Box** consisting of three latching buttons, two non-latching buttons, and a buzzer to control and execute various operations seamlessly during the process. 
+
+- The **latching buttons** allow for persistent commands such as starting, pausing, or resetting tasks.  
+- The **non-latching buttons** provide real-time control of the vacuum nozzle for precise handling.  
+- The **buzzer** acts as a safety feature, alerting operators to any errors or issues, ensuring smooth and secure task execution.  
 ## Robot Programming 🤖💻
 ```markdown
 # Function Task 2 (Stacking)
