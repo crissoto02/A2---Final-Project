@@ -1,60 +1,56 @@
-# Kinematics MATLAB GUI Code
+# Mathematical Model for Robotic Arm Kinematics and Simulation
 
-This project implements a **Graphical User Interface (GUI)** in MATLAB for performing forward and inverse kinematics calculations on a **3-DOF robotic manipulator**. The program allows users to input joint angles or desired position coordinates and visualize the resulting robot configuration.
-
----
-
-## Key Functionalities
-
-1. **Forward Kinematics**  
-   - **Input**: Users provide joint angles (`Theta_1`, `Theta_2`, `Theta_3`) in degrees.  
-   - **Computation**: Using the **Denavit-Hartenberg (DH)** parameters, the program calculates the robot's end-effector position using forward kinematics equations.  
-   - **Output**: The computed Cartesian coordinates (`X`, `Y`, `Z`) of the end-effector are displayed in the GUI.  
-   - **Visualization**: The robot's configuration is visualized using the **SerialLink** object and the `plot` function.
-
-2. **Inverse Kinematics**  
-   - **Input**: Users provide desired end-effector Cartesian coordinates (`Pos_X`, `Pos_Y`, `Pos_Z`).  
-   - **Computation**: The program calculates the corresponding joint angles (`Theta_1`, `Theta_2`, `Theta_3`) using the **inverse kinematics** function `ikine` with constraints on translation only.  
-   - **Output**: The joint angles are displayed in the GUI.  
-   - **Visualization**: The resulting robot configuration is visualized to ensure accuracy.
-
-3. **GUI Interaction**  
-   - **Editable Fields**: Users can input values for joint angles or end-effector positions through text boxes.  
-   - **Buttons**:
-     - **Forward Kinematics**: Calculates and displays the end-effector position.  
-     - **Inverse Kinematics**: Calculates and displays the joint angles based on input positions.  
-   - **Real-Time Visualization**: The robot’s movement and configuration are shown using the `plot` function.
+This section is designed to simulate and analyze the motion of a **3-DOF robotic manipulator**
 
 ---
 
-## Code Structure
+## Key Functions of the Codes
 
-1. **Initialization**:  
-   - The GUI is initialized with the `kinematics_OpeningFcn` function, setting up default properties and linking user inputs with handles.
+1. **Forward Kinematics**:
+   - Computes the position and orientation of the robot's end-effector (X, Y, Z) based on given joint angles.
+   - Allows users to verify the robot's configuration for specific inputs.
 
-2. **Forward Kinematics**:  
-   - The `btn_forward_Callback` function reads joint angles (`Theta_1`, `Theta_2`, `Theta_3`), calculates the end-effector position using the DH method, and displays the result.
+2. **Inverse Kinematics**:
+   - Determines the joint angles required to achieve a desired end-effector position.
+   - Useful for planning tasks where the target position is known but the joint angles are not.
 
-3. **Inverse Kinematics**:  
-   - The `pushbutton2_Callback` function reads desired positions (`Pos_X`, `Pos_Y`, `Pos_Z`), computes the corresponding joint angles using `ikine`, and updates the GUI fields.
+3. **Trajectory Planning**:
+   - Generates a smooth path between an initial and target joint configuration using the `jtraj` function.
+   - Simulates the motion of the robot and visualizes the end-effector's path in 3D space.
 
-4. **Visualization**:  
-   - Robot visualization is performed using the `SerialLink` and `plot` functions from the **Robotics Toolbox** for MATLAB.
+![Kinematics](https://github.com/user-attachments/assets/40e0e665-f09e-4f2d-a92b-f0362f6d6f20)
+
+
+4. **Jacobian Matrix Calculation**:
+   - Computes the Jacobian matrix, which relates joint velocities to end-effector velocities.
+   - Helps analyze how the robot moves and understand its dexterity and singularities.
+
+5. **Workspace Generation**:
+   - Calculates and visualizes the reachable workspace of the robotic arm by iterating through all possible joint configurations.
+   - Displays the robot's motion capabilities in 2D and 3D projections.
+     
+![Workspace](https://github.com/user-attachments/assets/65e03ac7-2d57-4ab2-8a71-b66b139d7a5c)
+
+
 
 ---
 
-## Dependencies
+## Applications
 
-- **MATLAB Robotics Toolbox**: Required for the `Link`, `SerialLink`, `fkine`, and `ikine` functions.  
-- **GUI Development Environment**: Created using **GUIDE** (MATLAB's GUI tool).  
-
----
-
-## Features Summary
-
-- **Input**: Joint angles or Cartesian positions.  
-- **Output**: Corresponding Cartesian positions or joint angles.  
-- **Visualization**: 3D robot visualization for accurate representation.  
-- **User-Friendly Interface**: Simple GUI for easy interaction and testing.
+- **Robotics Learning**:
+  - Understand kinematic concepts like forward/inverse kinematics, workspace, and Jacobians interactively.
+- **Simulation and Testing**:
+  - Simulate and validate the robot’s ability to move and reach desired positions before building a physical prototype.
+- **Motion Planning**:
+  - Design and test smooth trajectories for tasks such as clinical disinfection or object manipulation.
+- **Performance Analysis**:
+  - Evaluate the robot’s workspace, reachability, and dexterity for specific applications.
 
 ---
+
+## Visualizations Provided
+
+- **Robot Configuration**: Real-time 3D plotting of the robotic arm’s configuration.
+- **End-Effector Trajectory**: Smooth 3D curves showing the motion of the robot’s end-effector.
+- **Workspace**: Visual representation of the robot’s reachability in both 2D and 3D projections.
+
