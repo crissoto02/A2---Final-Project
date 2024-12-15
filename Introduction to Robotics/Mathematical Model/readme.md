@@ -1,4 +1,4 @@
-# Overview: Kinematics MATLAB GUI Code
+# Kinematics MATLAB GUI Code
 
 This project implements a **Graphical User Interface (GUI)** in MATLAB for performing forward and inverse kinematics calculations on a **3-DOF robotic manipulator**. The program allows users to input joint angles or desired position coordinates and visualize the resulting robot configuration.
 
