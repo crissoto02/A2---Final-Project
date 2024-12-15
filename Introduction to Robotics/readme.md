@@ -10,9 +10,6 @@ The project features a robotic arm designed for clinical disinfection, equipped 
 For full details about the robot modeling move to ([3D CAD](3D%20Model))
 
 ## Specifications
-### Material
-- Links: Stainless Steel
-### Weight (Payload)
 ### Motion Range
 ![Workspace](https://github.com/user-attachments/assets/a8588d32-cc9e-43bf-b552-9e29250ee9b9)
 
@@ -30,7 +27,3 @@ Number of Axes: 3 Degrees of Freedom
 - Symbolic Computation (generalized expressions for joint angles).
 
 For more details move to ([Mathematical Model](Mathematical%20Model)).
-
-## Simulation Results
-## Analysis
-## Conclusion
