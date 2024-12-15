@@ -1,6 +1,7 @@
 # Robotic Arm Structure of the Model
 
 The robotic system consists of a **3-DOF robotic arm** mounted on a **mobile base with omnidirectional wheels**. Its primary purpose is for **clinical disinfection** using ultraviolet (UV) light. Below is a detailed explanation of its components and functionalities:
+    ![Assembly](https://github.com/user-attachments/assets/95f39c43-49f4-427d-bf6d-d5fbbd00c958)
 
 
 ---
@@ -22,7 +23,7 @@ The robotic arm has **three rotational joints** that enable flexible movement:
   - Provides additional **vertical articulation** for the arm, improving precision in positioning.  
 
 These three rotational joints allow the robotic arm to reach various angles and positions effectively for surface disinfection.
-![Model](https://github.com/user-attachments/assets/38a6fe48-e6e5-41ad-bfb7-dd4118fd2de8)
+    ![Model](https://github.com/user-attachments/assets/38a6fe48-e6e5-41ad-bfb7-dd4118fd2de8)
 
 
 ---
