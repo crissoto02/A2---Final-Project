@@ -6,6 +6,7 @@ The project features a robotic arm designed for clinical disinfection, equipped 
 - Sensors
 - UV desinfection lights
 - Omnidirectional wheels
+For full details about the robot modeling move to ([3D CAD](3D%20Model))
 ## Specifications
 ### Material
 ### Weight (Payload)
