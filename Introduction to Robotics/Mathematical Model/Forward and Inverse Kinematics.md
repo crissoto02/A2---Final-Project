@@ -1,3 +1,9 @@
+# Kinematics MATLAB GUI for a 3-DOF Robotic Manipulator
+
+This MATLAB project implements a **Graphical User Interface (GUI)** using **GUIDE** to analyze and visualize the kinematics of a **3-DOF robotic manipulator**. It supports both **forward kinematics** and **inverse kinematics** computations, enabling users to input joint angles or desired end-effector positions and visualize the results in real time.
+
+---
+```matlab
 function varargout = kinematics(varargin)
 % KINEMATICS MATLAB code for kinematics.fig
 %      KINEMATICS, by itself, creates a new KINEMATICS or raises the existing
@@ -276,13 +282,76 @@ Robot.plot(J*pi/180);
 
 %analizar pq me da errores
 %mapea cuando esta competamente estirado
+```
 
+## Features
 
+1. **Forward Kinematics**  
+   - **Input**: Joint angles (`Theta_1`, `Theta_2`, `Theta_3`) in degrees.  
+   - **Computation**: Calculates the end-effector position using the **forward kinematics** function `fkine` based on Denavit-Hartenberg (DH) parameters.  
+   - **Output**: Displays the Cartesian coordinates (`Pos_X`, `Pos_Y`, `Pos_Z`) of the end-effector.  
+   - **Visualization**: Plots the robot's configuration in 3D space.
 
+2. **Inverse Kinematics**  
+   - **Input**: Desired Cartesian position (`Pos_X`, `Pos_Y`, `Pos_Z`) of the end-effector.  
+   - **Computation**: Solves for joint angles (`Theta_1`, `Theta_2`, `Theta_3`) using the **inverse kinematics** function `ikine` with translation constraints.  
+   - **Output**: Displays the corresponding joint angles.  
+   - **Visualization**: Plots the robot's configuration based on the calculated joint angles.
 
+---
 
+## GUI Layout
 
+### Input Fields:
+- **Theta_1**, **Theta_2**, **Theta_3**: Input joint angles in degrees.
+- **Pos_X**, **Pos_Y**, **Pos_Z**: Input Cartesian coordinates for the end-effector.
 
+### Buttons:
+- **Forward Kinematics**: Calculates the end-effector position from the joint angles.
+- **Inverse Kinematics**: Computes the joint angles from the desired end-effector position.
 
+### Outputs:
+- Displays the calculated **end-effector position** or **joint angles**.
 
+### Visualization:
+- The robot’s movement and configuration are plotted in a 3D environment using the **Robotics Toolbox**.
 
+---
+
+## Code Breakdown
+
+### Initialization and GUI Setup
+The GUI is initialized with the `kinematics_OpeningFcn` function. Default values and callbacks for GUI elements are established.
+
+---
+
+### Forward Kinematics (`btn_forward_Callback`)
+The forward kinematics is calculated based on the user-provided joint angles:
+```matlab
+% Convert joint angles to radians
+Th_1 = str2double(handles.Theta_1.String) * pi / 180;
+Th_2 = str2double(handles.Theta_2.String) * pi / 180;
+Th_3 = str2double(handles.Theta_3.String) * pi / 180;
+
+% Define link lengths
+L_1 = 40; L_2 = 30; L_3 = 20;
+
+% Define DH parameters
+L(1) = Link([0 L_1 0 pi/2]);
+L(2) = Link([0 0 L_2 0]);
+L(3) = Link([0 0 L_3 0]);
+
+% Create SerialLink Robot
+Robot = SerialLink(L);
+
+% Plot robot configuration
+Robot.plot([Th_1 Th_2 Th_3]);
+
+% Calculate end-effector position
+Tout = Robot.fkine([Th_1 Th_2 Th_3]);
+Tout_t = Tout.t;
+
+% Display position in GUI
+handles.Pos_X.String = num2str(floor(Tout_t(1)));
+handles.Pos_Y.String = num2str(floor(Tout_t(2)));
+handles.Pos_Z.String = num2str(floor(Tout_t(3)));
