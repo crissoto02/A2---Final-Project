@@ -126,7 +126,13 @@ Fend
 [![Programming](https://img.shields.io/badge/Buttons%20Programming-green?style=for-the-badge)](IO%20Box/Task%203/IO%20Box%20Programming.md)
 [![HMI & GUI](https://img.shields.io/badge/HMI%20&%20GUI-yellow?style=for-the-badge)](HMI%20(task%203).md)
 
-This task use an I/O Box consisting of three latching buttons, two non-latching buttons and a buzzer to perform differents operations during the process. Also contains and HMI and a GUI interface to control the buttons virtually
+This task utilizes an **I/O Box** consisting of three latching buttons, two non-latching buttons, and a buzzer to control and execute various operations seamlessly during the process. 
+
+- The **latching buttons** allow for persistent commands such as starting, pausing, or resetting tasks.  
+- The **non-latching buttons** provide real-time control of the vacuum nozzle and control the Reverse function.  
+- The **buzzer** acts as a safety feature, alerting operators to any errors or issues, ensuring smooth and secure task execution.
+  
+In addition to the physical buttons, the system also includes an **HMI (Human-Machine Interface)** and a **GUI (Graphical User Interface)**, allowing operators to control the buttons virtually. This dual interface ensures greater flexibility and ease of operation, enabling both physical and virtual interaction with the robot's control system.  
 ## Robot Programming 🤖💻
 ```markdown
 # Function Task 3 (Integration)
