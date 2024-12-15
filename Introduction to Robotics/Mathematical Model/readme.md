@@ -4,7 +4,7 @@ This section is designed to simulate and analyze the motion of a **3-DOF robotic
 
 ---
 
-## Key Functions of the Codes
+## Key Functions
 
 1. **Forward Kinematics**:
    - Computes the position and orientation of the robot's end-effector (X, Y, Z) based on given joint angles.
@@ -18,7 +18,7 @@ This section is designed to simulate and analyze the motion of a **3-DOF robotic
    - Generates a smooth path between an initial and target joint configuration using the `jtraj` function.
    - Simulates the motion of the robot and visualizes the end-effector's path in 3D space.
 
-![Kinematics](https://github.com/user-attachments/assets/40e0e665-f09e-4f2d-a92b-f0362f6d6f20)
+      ![Kinematics](https://github.com/user-attachments/assets/40e0e665-f09e-4f2d-a92b-f0362f6d6f20)
 
 
 4. **Jacobian Matrix Calculation**:
@@ -29,7 +29,7 @@ This section is designed to simulate and analyze the motion of a **3-DOF robotic
    - Calculates and visualizes the reachable workspace of the robotic arm by iterating through all possible joint configurations.
    - Displays the robot's motion capabilities in 2D and 3D projections.
      
-![Workspace](https://github.com/user-attachments/assets/65e03ac7-2d57-4ab2-8a71-b66b139d7a5c)
+      ![Workspace](https://github.com/user-attachments/assets/65e03ac7-2d57-4ab2-8a71-b66b139d7a5c)
 
 
 
