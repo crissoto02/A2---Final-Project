@@ -11,9 +11,10 @@ For full details about the robot modeling move to ([3D CAD](3D%20Model))
 
 ## Specifications
 ### Material
+- Links: Stainless Steel
 ### Weight (Payload)
 ### Motion Range
-Reach: 1400mm
+![Workspace](https://github.com/user-attachments/assets/a8588d32-cc9e-43bf-b552-9e29250ee9b9)
 
 Structure: Articulated
 
