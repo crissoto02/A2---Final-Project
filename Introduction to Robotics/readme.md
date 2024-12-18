@@ -10,16 +10,23 @@ The project features a robotic arm designed for clinical disinfection, equipped 
 For full details about the robot modeling move to ([3D CAD](3D%20Model))
 
 ## Specifications
+### Weight
+40 kg
 ### Motion Range
 ![Workspace](https://github.com/user-attachments/assets/a8588d32-cc9e-43bf-b552-9e29250ee9b9)
 
 Structure: Articulated
 
+Reach: 500 mm
+
 Number of Axes: 3 Degrees of Freedom
 - Axis 1: -175° ~ 175°
 - Axis 2: 0° ~ 90°
 - Axis 3: 0° ~ 90°
-  
+### Speed Range
+- Axis 1: 83.12 units/sec
+- Axis 2: 63.33 units/sec
+- Axis 3: 60.58 units/sec
 ### Payload
 Tha robot suppor a maximum extra weight of approximately 6 kg
 
